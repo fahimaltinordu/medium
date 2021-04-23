@@ -247,14 +247,18 @@
                align-items: center;
                margin-bottom:10px;
                padding-top:10px;
+              a {
                h5 {
                   font-size: 13px;
                   margin-bottom:0;
                   margin-left:10px;
                   opacity:0.8;
+                  color:black;
                }
+              }
             }
-            >h3 {
+            >a h3 {
+               color:black;
                font-size: 15px;
                margin-bottom:10px;
                display: -webkit-box;
