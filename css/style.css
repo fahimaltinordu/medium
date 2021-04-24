@@ -263,7 +263,7 @@ section#articles {
     section#articles #articles-layer article .news {
       display: grid;
       grid-template-columns: 1fr 200px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         section#articles #articles-layer article .news {
           grid-template-columns: 1fr 150px; } }
       @media screen and (max-width: 576px) {
@@ -283,11 +283,26 @@ section#articles {
             font-size: 13px;
             line-height: 16px;
             color: #292929; }
+            @media screen and (max-width: 768px) {
+              section#articles #articles-layer article .news .news-content a .head h6 {
+                opacity: 0.8;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden; } }
         section#articles #articles-layer article .news .news-content a h1 {
           line-height: 20px;
           font-size: 16px;
           color: #292929;
           margin-bottom: 10px; }
+          @media screen and (max-width: 768px) {
+            section#articles #articles-layer article .news .news-content a h1 {
+              font-size: 18px;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              font-weight: 700; } }
         section#articles #articles-layer article .news .news-content a p {
           color: #757575;
           line-height: 20px;
@@ -304,7 +319,7 @@ section#articles {
           color: #757575; }
       section#articles #articles-layer article .news .news-img {
         align-self: center; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           section#articles #articles-layer article .news .news-img img {
             width: 150px; } }
         @media screen and (max-width: 576px) {
