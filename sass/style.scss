@@ -385,39 +385,45 @@
          }
       }
       aside {
-         padding:10px 5px;
-         border-bottom:1px solid rgba(41, 41, 41, 0.2);
          @media screen and (max-width:992px) {
             order:-1;
             margin-bottom:20px;
          }
-         h4 {
-            letter-spacing: 0.083em;
-            line-height: 16px;
-            text-transform: uppercase;
-            font-size: 12px;
-            margin-bottom:16px;
-         }
-         a {
-            border:1px solid rgb(230, 230, 230);
-            border-radius:3px;
-            color:rgba(0, 0, 0, 0.8);
-            font-size: 13px;
-            padding:6px 16px;
-            display:inline-block;
-            margin-bottom:8px;
-            &:nth-of-type(10) {
-               border:initial;
-               color:rgba(26, 137, 23, 1);
-               display:block;
-               padding:initial;
-               font-size:14px;
-               line-height:20px;
-               margin-top:10px;
-               font-weight: 700;
+         .inneraside {
+            position:-webkit-sticky;
+            position:sticky;
+            top:100px;
+            padding:10px 5px;
+            border-bottom:1px solid rgba(41, 41, 41, 0.2);
+            h4 {
+               letter-spacing: 0.083em;
+               line-height: 16px;
+               text-transform: uppercase;
+               font-size: 12px;
+               margin-bottom:16px;
             }
-
+            a {
+               border:1px solid rgb(230, 230, 230);
+               border-radius:3px;
+               color:rgba(0, 0, 0, 0.8);
+               font-size: 13px;
+               padding:6px 16px;
+               display:inline-block;
+               margin-bottom:8px;
+               &:nth-of-type(10) {
+                  border:initial;
+                  color:rgba(26, 137, 23, 1);
+                  display:block;
+                  padding:initial;
+                  font-size:14px;
+                  line-height:20px;
+                  margin-top:10px;
+                  font-weight: 700;
+               }
+   
+            }
          }
+
       }
    }
  }
